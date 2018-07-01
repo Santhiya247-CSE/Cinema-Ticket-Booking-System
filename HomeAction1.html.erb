@@ -1,0 +1,64 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.bg{
+			/*background-image: url("/images/giphy (5).gif");*/
+			background-size: 900px 600px;
+			background-position: static;
+		}
+		a:link{
+			color: orange;
+		}
+		a:visited:{
+			color: yellow;
+		}
+		a:active{
+			color: white;
+		}
+body {
+  margin: 0;
+  font-family: TimesNewRoman;
+}
+.mb {
+  overflow: hidden;
+  background-color: green;
+}
+
+.mb a {
+  float: left;
+  color: yellow;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.mb a:hover {
+  background-color: black;
+  color: blue;
+}
+
+.mb a.active {
+  background-color: #black;
+  color: white;
+}
+</style>
+</head>
+	<body class="bg" align="center">
+	<div class="mb">
+	<a class="active"><%= link_to "Home",:action=>'Home'%>
+		<%= link_to "AdminLogin",:action=>'AdminLogin'%>
+		<%= link_to "About",:action=>'About'%>
+		<%= link_to "Feedback",:action=>'Feedback'%>
+		<%= link_to "Rate",:action=>'Rate'%>
+	</a>
+</div>
+	<marquee>
+		<h3><font family="TimesNewRoman" color="dark violet"><b>Welcome to CinemaZone!! Happy Watching!!</b></font></h3>
+	</marquee>
+<h1><font family="Verdana" color="white"><b>CINEMA ZONE</b></font></h1>
+<form name="home" action="HomeAction" method="get">
+<b><%="You have successfully chosen the Movie" %></b>
+</body>
+</html>

@@ -1,0 +1,135 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.bg{
+			background-image: url("/images/spacegif.gif");
+			background-size: 900px 600px;
+			background-position: static;
+		}
+		a:link{
+			color: orange;
+		}
+		a:visited:{
+			color: yellow;
+		}
+		a:active{
+			color: white;
+		}
+body {
+  margin: 0;
+  font-family: TimesNewRoman;
+}
+
+.mb {
+  overflow: hidden;
+  background-color: yellow;
+}
+
+.mb a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.mb a:hover {
+  background-color: black;
+  color: blue;
+}
+
+.mb a.active {
+  background-color: #black;
+  color: white;
+}
+.img{
+	height: 276px;
+	width: 183px;
+}
+</style>
+</head>
+	<body class="bg" align="center">
+	<div class="mb">
+		<a class="active"><%= link_to "Home",:action=>'Home'%>
+	<%= link_to "AdminLogin",:action=>'AdminLogin'%>
+	<%= link_to "About",:action=>'About'%>
+	<%= link_to "Feedback",:action=>'Feedback'%>
+	<%= link_to "Rate",:action=>'Rate'%>
+	
+	</a>
+</div>
+	<marquee>
+		<h3><font family="TimesNewRoman" color="yellow"><b>Welcome to CinemaZone!! Happy Watching!!</b></font></h3>
+	</marquee>
+	<h1><font family="Verdana" color="white"><b>CINEMA ZONE</b></font></h1>
+<form name="home" action="HomeAction" method="get">
+	<td><font color="white"><b><i>Select City:</b></i></font></td><br><br>
+	<td><select name="city" required>
+		<option value="Delhi">Delhi</option>
+		<option value="Haryana">Haryana</option>
+		<option value="Uttar Pradesh">Uttar Pradesh</option>
+		<option value="West Bengal">West Bengal</option>
+		<option value="Maharashtra">Maharashtra</option>
+		<option value="Telengana">Telengana</option>
+		<option value="Karnataka">Karnataka</option>
+		<option value="Chennai">Chennai</option>
+		<option value="Calcutta">Calcutta</option>
+		<option value="Mumbai">Mumbai</option>
+		<option value="Assam">Assam</option>
+	</select>
+	</td>
+</b>
+</font>
+</td>
+</form>
+<h1 style="TimesNewRoman"><b><font color="white">Pick a Movie</b></h1></font><br>
+<form name="home1" action="HomeAction1" method="get">
+<td><select name="movie" required>
+	<option value="Zootopia">Zootopia</option>
+	<option value="Inside Out">Inside Out</option>
+    <option value="Super Mario3">Super Mario3</option>
+    <option value="Despicable Me2">Despicable ME2</option>
+    <option value="Crados">Crados</option>
+    <option value="Super Mario Bros">Super Mario Bros</option>
+    <option value="Frozen">Frozen</option>
+	<option value="Finding Nemo">Finding Nemo</option>
+	<option value="Ghatothkach">Ghatothkach</option>
+	<option value="Spiderman">Spiderman</option>
+	<option value=""></option>
+</select>
+<br>
+</td>
+<body div="img">
+	<br>
+<img src="/images/1.jpg" height="276px" width="183px"/>
+<!--<input type="submit" value="Zootopia"/>-->
+<img src="/images/2.jpg" height="276px" width="183px"/>
+<!--<input type="submit" value="Inside Out"/>-->
+<img src="/images/3.jpg" height="276px" width="183px"/>
+<!--<input type="submit" value="Super Mario3"/>-->
+<img src="/images/4.jpg" height="276px" width="183px"/>
+<!--<input type="submit" value="Despicable ME2"/>-->
+<img src="/images/5.jpg" height="276px" width="183px"/>
+<!--<input type="submit" value="Crados"/>-->
+<img src="/images/6.jpeg" height="276px" width="183px"/>
+<!--<input type="submit" value="Super Mario Bros"/>-->
+<img src="/images/7.jpg" height="276px" width="183px"/>
+<!--<input type="submit" value="Frozen"/>-->
+<img src="/images/8.jpg" height="276px" width="183px"/>
+<!--<input type="submit" value="Finding Nemo"/>-->
+<img src="/images/9.jpg" height="276px" width="183px"/>
+<!--<input type="submit" value="Ghatothkach"/>-->
+<img src="/images/10.jpg" height="276px" width="183px"/>
+<!--<input type="submit" value="Spiderman"/>-->
+</body>
+</b>
+</h1>
+</form>
+
+<form name="movie" action="movie" method="get">
+	<br>
+	<input type="submit" name="Submit"/>
+</body>
+
